@@ -2,7 +2,18 @@ import React from "react";
 
 class EditFishForm extends React.Component {
   render() {
-    return <p> Edit Fish</p>;
+    return (
+      <div className="fish-edit">
+        <input type="text" name="name" />
+        <input type="text" name="price" />
+        <select type="text" name="status">
+          <option value="avaliable">Fresh!</option>
+          <option value="unavaliable">Sold Out!</option>
+        </select>
+        <textarea name="desc" />
+        <input type="text" name="image" />
+      </div>
+    );
   }
 }
 
